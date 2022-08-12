@@ -18,5 +18,5 @@ RUN npm install
 USER node
 COPY . ./
 
-# CMD ["npm", "start"]
-CMD ["tail", "-f", "/dev/null"]
+# CMD ["tail", "-f", "/dev/null"]
+CMD ["npm", "start:dev"]
