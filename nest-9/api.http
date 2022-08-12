@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3050/bank-accounts/123
+DELETE http://localhost:3050/bank-accounts/4f4bb3bb-df05-46f2-a4b5-31f4022bb75f
 
 ###
 POST http://localhost:3050/bank-accounts/transfer
