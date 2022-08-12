@@ -36,7 +36,9 @@ export class BankAccountsService {
     fromAccount.balance -= amount;
     toAccount.balance += amount;
 
+    this.repo.queryRunner.startTransaction();
     this.repo.save(fromAccount);
     this.repo.save(toAccount);
+    this.repo.queryRunner.commitTransaction();
   }
 }
